@@ -15,15 +15,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS (linked to your own style.css) -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Library (Animate On Scroll) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-
+    <!-- Marquee Banner -->
+<div class="marquee-wrapper bg-dark text-white py-2">
+    <div class="marquee-text">
+      <span>🔥 50% OFF on all new arrivals! | 🚚 Free shipping on orders over $50 | ✨ Limited Time Offer! Shop Now!</span>
+    </div>
+  </div>
+  
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg py-3 sticky-top shadow-sm" style="background-color: #fefae0;">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg py-3 sticky-top shadow-sm"  data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
       <!-- Logo -->
-      <a class="navbar-brand fw-bold" href="index.html" style="color: #d4a373; font-size: 1.5rem;">
+      <a class="navbar-brand fw-bold text-dark" href="index.html" style=" font-size: 1.5rem;">
         Fashionista
       </a>
   
@@ -67,7 +76,7 @@
     </nav>
    <!-- Navbar End -->
     <!-- Hero Section Start -->
-    <section class="hero-section position-relative d-flex align-items-center" style="min-height: 100vh; overflow: hidden;">
+    <section class="hero-section position-relative d-flex align-items-center" style="min-height: 100vh; overflow: hidden;" data-aos="fade-up" data-aos-duration="1000">
 
         <!-- Fullscreen Background Video -->
         <video id="heroVideo" autoplay muted loop playsinline
@@ -82,18 +91,7 @@
           ❚❚
         </button>
       
-        <!-- Content -->
-        <div class="container position-relative z-2 text-start">
-          <div class="row">
-            <div class="col-md-7">
-              <h1 class="display-4 fw-bold mb-3" style="color: #fefae0;">Elevate Your Style</h1>
-              <p class="lead mb-4" style="color: #e9edc9;">Discover the latest trends in fashion curated just for you.</p>
-              <a href="shop.html" class="btn btn-lg" style="background-color: #d4a373; color: #fff; border-radius: 50px; padding: 12px 30px;">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
+       
       
       </section>
       
@@ -101,7 +99,7 @@
   
   <!-- Features Section -->
 <!-- Features Section -->
-<section class="features py-5">
+<section class="features py-5"  data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <div class="row">
         <!-- Customer Support -->
@@ -141,8 +139,8 @@
   </section>
   
 <!-- Featured Products Section -->
-<section class="featured-products py-5" style="background-color: #fefae0;">
-    <div class="container">
+<section class="featured-products py-5" style="background-color: #f8f9fa;">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
       <div class="row text-center mb-4">
         <div class="col">
           <h2 style="color: #333;">Featured Products</h2>
@@ -225,8 +223,8 @@
   </section>
     
   <!-- Call to Action Section -->
-<section class="cta-section py-5" style="background-image: url('img/cta.jpg'); background-size: cover; background-position: center; color: #fff; text-align: center;">
-    <div class="container">
+<section class="cta-section py-5" style="background-image: url('img/cta.jpg'); background-size: cover; background-position: center; color: #fff; text-align: center;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
       <div class="row">
         <div class="col">
           <h2 style="font-size: 2.5rem; font-weight: 600;">Don't Miss Out on Our Latest Collections</h2>
@@ -239,8 +237,8 @@
     </div>
   </section>
   
-  <section class="new-arrivals py-5" style="background-color: #faedcd;">
-    <div class="container">
+  <section class="new-arrivals py-5" style="background-color: #faedcd;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
       <div class="row text-center mb-4">
         <div class="col">
           <h2 style="color: #333;">New Arrivals</h2>
@@ -311,12 +309,131 @@
       </div>
     </div>
   </section>
+  <section class="promo-masonry py-5" style="background-color: #faedcd;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
+      <div class="row g-3">
+        <!-- Column 1 (two stacked banners) -->
+        <div class="col-md-6">
+          <!-- Small Banner on Top -->
+          <div class="mb-3">
+            <div class="banner rounded-3 overflow-hidden" style="height: 200px;">
+              <img src="img/banner-1.webp" alt="Banner Small" class="w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+          <!-- Tall Banner Below -->
+          <div>
+            <div class="banner rounded-3 overflow-hidden" style="height: 300px;">
+              <img src="img/banner-2.jfif" alt="Banner Tall" class="w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Column 2 (single large banner) -->
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="banner rounded-3 overflow-hidden w-100" style="height: 520px;">
+            <img src="img/banner-3.webp" alt="Banner Large" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter Section -->
+<section class="newsletter py-5" style="background-color: #141414;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container text-center text-white" >
+      <h3 class="fw-bold">Sign up for exclusive updates</h3>
+      <p>Get the latest news, trends, and special offers directly in your inbox.</p>
+      <div class="d-flex justify-content-center">
+        <input type="email" class="form-control w-50" placeholder="Enter your email" />
+        <button class="btn btn-warning ms-2">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Add some space after newsletter section -->
+  <div class="newsletter-space" style="height: 50px; background-color: #fff;"></div>
+  
+  <!-- Footer Section -->
+  <footer class="footer text-white pt-5 pb-3" style="background-color: #141414;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & Description -->
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold" style="color: #d4a373;">StyleSavvy</h4>
+          <p style="color: #aaa;">Your ultimate destination for curated fashion and modern elegance.</p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="shop.html" class="footer-link">Shop</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+  
+        <!-- Customer Service -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">Customer Care</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">Follow Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Payment Methods -->
+      <div class="row text-center mt-4">
+        <div class="col">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">We Accept</h6>
+          <div class="d-flex justify-content-center gap-4">
+            <img src="img/visa.png" alt="Visa" class="payment-icon" width="50">
+            <img src="img/masterCard.png" alt="MasterCard" class="payment-icon" width="50">
+            <img src="img/paypal.png" alt="PayPal" class="payment-icon" width="50">
+                     </div>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p class="mb-0" style="color: #777;">&copy; 2025 StyleSavvy. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
   
     <!-- Bootstrap JS (for functionality like collapse) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS (linked to your own script.js) -->
     <script src="js/script.js"></script>
+    <!-- AOS Library JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // Set duration for the animation
+    easing: 'ease-in-out', // Set easing function for smooth transitions
+    once: true // Make sure animations happen only once
+  });
+</script>
+
 </body>
 
 </html>

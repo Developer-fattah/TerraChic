@@ -1,4 +1,38 @@
+html {
+    scroll-behavior: smooth;
+  }
+  .marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .marquee-text span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 15s linear infinite;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+    
 /* Navbar link hover effect */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* The magic blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
 .navbar-nav .nav-link {
     position: relative;
     font-weight: 500;
@@ -89,24 +123,29 @@
   }
         /* Features Section Style */
 .features {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-  }
+        background-color: #fff; /* Transparent white */
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+      
+  
   
   .feature-icon {
     font-size: 30px;
-    color: #d4a373;
+    
   }
   
   .feature-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #333;
+    
   }
   
   .feature-text p {
     font-size: 1rem;
-    color: #555;
+    
     margin: 0;
   }
   
@@ -131,4 +170,92 @@
       font-size: 0.875rem;
     }
   }
+  .banner-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  .banner-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+  }
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  .btn-glow {
+    background-color: #d4a373;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #d4a37380, 0 0 20px #d4a37340;
+  }
+  
+  .btn-glow:hover {
+    background-color: #e9b27c;
+    box-shadow: 0 0 12px #e9b27c, 0 0 25px #e9b27c;
+  }
+  
+  .newsletter input.form-control {
+    border-radius: 0.375rem;
+    padding: 10px 15px;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .newsletter input.form-control::placeholder {
+    color: #aaa;
+  }
+  .footer-link {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #d4a373;
+  }
+/* Add space between the newsletter and footer */
+.newsletter-space {
+    height: 50px;
+    background-color: #fff; /* White space between sections */
+  }
+  
+  /* Social Icons Hover */
+  .social-icon {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #d4a373; /* Gold color on hover */
+    transform: scale(1.1); /* Slightly grow on hover */
+  }
+  
+  /* Payment Icon Styling */
+  .payment-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-icon:hover {
+    transform: scale(1.1); /* Grow on hover */
+  }
+  .animated-gradient-text {
+    font-weight: 700;
+    background: linear-gradient(270deg, #d4a373, #faedcd, #e9edc9, #ccd5ae, #d4a373);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   
