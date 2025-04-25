@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Title of the page -->
+    <title>TerraChic</title>
+    <!-- Google Fonts (for custom typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons (for cart, search, etc.) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS (via CDN for responsiveness and layout) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (linked to your own style.css) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Library (Animate On Scroll) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Marquee Banner -->
+        <div class="marquee-wrapper bg-dark text-white py-2">
+    <div class="marquee-text">
+      <span>🔥 50% OFF on all new arrivals! | 🚚 Free shipping on orders over $50 | ✨ Limited Time Offer! Shop Now!</span>
+    </div>
+        </div>
+  
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top shadow-sm"  data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-dark" href="index.html" style=" font-size: 1.5rem;">
+        Fashionista
+      </a>
+  
+      <!-- Toggle for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center me-3">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+  
+        <!-- Search Bar -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    </nav>
+   <!-- Navbar End -->
+    <!-- Hero Section Start -->
+   <!-- Shop Hero Image Only -->
+<section class="shop-hero" data-aos="fade-up" data-aos-duration="1000">
+    <img src="img/banner-2.jfif" alt="Shop Banner" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+  </section>
+  
+     
+  <!-- Hero Section with Video End -->
+  <section class="shop-section py-5" style="background-color: #fefae0;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        
+        <!-- 🔍 Sidebar Filters -->
+        <aside class="col-lg-3 mb-4">
+          <div class="filter-box p-4 rounded shadow-sm bg-white">
+            <h5 class="mb-4 fw-bold">Filters</h5>
+  
+            <!-- Categories -->
+            <div class="mb-4">
+              <h6 class="fw-semibold">Categories</h6>
+              <ul class="list-unstyled mb-0">
+                <li><input type="checkbox"> Men</li>
+                <li><input type="checkbox"> Women</li>
+                <li><input type="checkbox"> Kids</li>
+              </ul>
+            </div>
+  
+            <!-- Price Range -->
+            <div class="mb-4">
+              <h6 class="fw-semibold">Price</h6>
+              <input type="range" min="0" max="100" value="50" class="form-range">
+              <p class="small text-muted">Up to $50</p>
+            </div>
+  
+            <!-- Size -->
+            <div class="mb-4">
+              <h6 class="fw-semibold">Size</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="btn btn-sm btn-outline-dark">S</span>
+                <span class="btn btn-sm btn-outline-dark">M</span>
+                <span class="btn btn-sm btn-outline-dark">L</span>
+                <span class="btn btn-sm btn-outline-dark">XL</span>
+              </div>
+            </div>
+  
+            <!-- Color -->
+            <div>
+              <h6 class="fw-semibold">Color</h6>
+              <div class="d-flex gap-2">
+                <span class="color-dot bg-dark rounded-circle" style="width: 20px; height: 20px;"></span>
+                <span class="color-dot bg-danger rounded-circle" style="width: 20px; height: 20px;"></span>
+                <span class="color-dot bg-primary rounded-circle" style="width: 20px; height: 20px;"></span>
+                <span class="color-dot bg-success rounded-circle" style="width: 20px; height: 20px;"></span>
+              </div>
+            </div>
+          </div>
+        </aside>
+  
+        <!-- 🛍️ Product Grid -->
+        <div class="col-lg-9">
+          <div class="row">
+            
+            <!-- Product Card -->
+            <div class="col-md-4 col-6 mb-4">
+              <div class="product-card p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" data-bs-toggle="modal" data-bs-target="#productModal1">
+                <img src="img/featured-3.webp" alt="Product 1" class="img-fluid mb-3" style="border-radius: 8px;">
+                <h5 style="color: #333;">Casual T-Shirt</h5>
+                <p class="rating" style="color: #ffd700;">★★★★☆</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold" style="color: #333;">$19.99</p>
+                  <button class="btn btn-outline-primary btn-sm" style="border-radius: 50%; border-color: #28a745;">
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 2-->
+            <div class="col-md-4 col-6 mb-4">
+              <div class="product-card p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" data-bs-toggle="modal" data-bs-target="#productModal2">
+                <img src="img/featured-4.webp" alt="Product 1" class="img-fluid mb-3" style="border-radius: 8px;">
+                <h5 style="color: #333;">Stylish Shirt</h5>
+                <p class="rating" style="color: #ffd700;">★★★★☆</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold" style="color: #333;">$19.99</p>
+                  <button class="btn btn-outline-primary btn-sm" style="border-radius: 50%; border-color: #28a745;">
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 3-->
+            <div class="col-md-4 col-6 mb-4">
+              <div class="product-card p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" data-bs-toggle="modal" data-bs-target="#productModal3">
+                <img src="img/featured-5.webp" alt="Product 3" class="img-fluid mb-3" style="border-radius: 8px;">
+                <h5 style="color: #333;">Casual Jeans</h5>
+                <p class="rating" style="color: #ffd700;">★★★★☆</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold" style="color: #333;">$19.99</p>
+                  <button class="btn btn-outline-primary btn-sm" style="border-radius: 50%; border-color: #28a745;">
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 4-->
+            <div class="col-md-4 col-6 mb-4">
+              <div class="product-card p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" data-bs-toggle="modal" data-bs-target="#productModal4">
+                <img src="img/featured-6.webp" alt="Product 3" class="img-fluid mb-3" style="border-radius: 8px;">
+                <h5 style="color: #333;">Denim Jeans</h5>
+                <p class="rating" style="color: #ffd700;">★★★★☆</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold" style="color: #333;">$49.99</p>
+                  <button class="btn btn-outline-primary btn-sm" style="border-radius: 50%; border-color: #28a745;">
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 5-->
+            <div class="col-md-4 col-6 mb-4">
+              <div class="product-card p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" data-bs-toggle="modal" data-bs-target="#productModal5">
+                <img src="img/new-1.webp" alt="Product 3" class="img-fluid mb-3" style="border-radius: 8px;">
+                <h5 style="color: #333;">Slim Fit Pants</h5>
+                <p class="rating" style="color: #ffd700;">★★★★☆</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold" style="color: #333;">$34.99</p>
+                  <button class="btn btn-outline-primary btn-sm" style="border-radius: 50%; border-color: #28a745;">
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 6-->
+            <div class="col-md-4 col-6 mb-4">
+              <div class="product-card p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" data-bs-toggle="modal" data-bs-target="#productModal6">
+                <img src="img/new-2.webp" alt="Product 3" class="img-fluid mb-3" style="border-radius: 8px;">
+                <h5 style="color: #333;">Linen Shirt</h5>
+                <p class="rating" style="color: #ffd700;">★★★★☆</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold" style="color: #333;">$12.99</p>
+                  <button class="btn btn-outline-primary btn-sm" style="border-radius: 50%; border-color: #28a745;">
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Duplicate this block for more products -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Product Modal 1 -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px; overflow: hidden;">
+        <div class="modal-body p-4">
+          <div class="row">
+            
+            <!-- Product Image -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="img/featured-3.webp" alt="Product Image" class="img-fluid rounded">
+            </div>
+            
+            <!-- Product Info -->
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-2">Casual T-Shirt</h4>
+              <p class="text-muted mb-3">A comfortable and stylish t-shirt perfect for everyday wear.</p>
+              <p class="h5 text-success fw-bold mb-3">$19.99</p>
+  
+              <!-- Size -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Size:</label>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-secondary btn-sm">S</button>
+                  <button class="btn btn-outline-secondary btn-sm">M</button>
+                  <button class="btn btn-outline-secondary btn-sm">L</button>
+                  <button class="btn btn-outline-secondary btn-sm">XL</button>
+                </div>
+              </div>
+  
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantity:</label>
+                <input type="number" value="1" min="1" class="form-control form-control-sm" style="max-width: 80px;">
+              </div>
+  
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                  <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fas fa-heart me-1"></i> Wishlist
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Product Modal 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px; overflow: hidden;">
+        <div class="modal-body p-4">
+          <div class="row">
+            
+            <!-- Product Image -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="img/featured-4.webp" alt="Product Image" class="img-fluid rounded">
+            </div>
+            
+            <!-- Product Info -->
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-2">Stylish Shirt</h4>
+              <p class="text-muted mb-3">A comfortable and stylish t-shirt perfect for everyday wear.</p>
+              <p class="h5 text-success fw-bold mb-3">$19.99</p>
+  
+              <!-- Size -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Size:</label>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-secondary btn-sm">S</button>
+                  <button class="btn btn-outline-secondary btn-sm">M</button>
+                  <button class="btn btn-outline-secondary btn-sm">L</button>
+                  <button class="btn btn-outline-secondary btn-sm">XL</button>
+                </div>
+              </div>
+  
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantity:</label>
+                <input type="number" value="1" min="1" class="form-control form-control-sm" style="max-width: 80px;">
+              </div>
+  
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                  <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fas fa-heart me-1"></i> Wishlist
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Product Modal 3 -->
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px; overflow: hidden;">
+        <div class="modal-body p-4">
+          <div class="row">
+            
+            <!-- Product Image -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="img/featured-5.webp" alt="Product Image" class="img-fluid rounded">
+            </div>
+            
+            <!-- Product Info -->
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-2">Casual Jeans</h4>
+              <p class="text-muted mb-3">A comfortable and stylish jeans perfect for everyday wear.</p>
+              <p class="h5 text-success fw-bold mb-3">$19.99</p>
+  
+              <!-- Size -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Size:</label>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-secondary btn-sm">S</button>
+                  <button class="btn btn-outline-secondary btn-sm">M</button>
+                  <button class="btn btn-outline-secondary btn-sm">L</button>
+                  <button class="btn btn-outline-secondary btn-sm">XL</button>
+                </div>
+              </div>
+  
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantity:</label>
+                <input type="number" value="1" min="1" class="form-control form-control-sm" style="max-width: 80px;">
+              </div>
+  
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                  <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fas fa-heart me-1"></i> Wishlist
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Product Modal 4 -->
+<div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px; overflow: hidden;">
+        <div class="modal-body p-4">
+          <div class="row">
+            
+            <!-- Product Image -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="img/featured-6.webp" alt="Product Image" class="img-fluid rounded">
+            </div>
+            
+            <!-- Product Info -->
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-2">Denim Jeans</h4>
+              <p class="text-muted mb-3">A comfortable and trendy denim jeans perfect for everyday wear.</p>
+              <p class="h5 text-success fw-bold mb-3">$49.99</p>
+  
+              <!-- Size -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Size:</label>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-secondary btn-sm">S</button>
+                  <button class="btn btn-outline-secondary btn-sm">M</button>
+                  <button class="btn btn-outline-secondary btn-sm">L</button>
+                  <button class="btn btn-outline-secondary btn-sm">XL</button>
+                </div>
+              </div>
+  
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantity:</label>
+                <input type="number" value="1" min="1" class="form-control form-control-sm" style="max-width: 80px;">
+              </div>
+  
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                  <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fas fa-heart me-1"></i> Wishlist
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Product Modal 5 -->
+<div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px; overflow: hidden;">
+        <div class="modal-body p-4">
+          <div class="row">
+            
+            <!-- Product Image -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="img/new-1.webp" alt="Product Image" class="img-fluid rounded">
+            </div>
+            
+            <!-- Product Info -->
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-2">Slim Fit Pants</h4>
+              <p class="text-muted mb-3">A comfortable and trendy Slim Fit Pants perfect for everyday wear.</p>
+              <p class="h5 text-success fw-bold mb-3">$34.99</p>
+  
+              <!-- Size -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Size:</label>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-secondary btn-sm">S</button>
+                  <button class="btn btn-outline-secondary btn-sm">M</button>
+                  <button class="btn btn-outline-secondary btn-sm">L</button>
+                  <button class="btn btn-outline-secondary btn-sm">XL</button>
+                </div>
+              </div>
+  
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantity:</label>
+                <input type="number" value="1" min="1" class="form-control form-control-sm" style="max-width: 80px;">
+              </div>
+  
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                  <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fas fa-heart me-1"></i> Wishlist
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Product Modal 6 -->
+<div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 10px; overflow: hidden;">
+        <div class="modal-body p-4">
+          <div class="row">
+            
+            <!-- Product Image -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="img/new-2.webp" alt="Product Image" class="img-fluid rounded">
+            </div>
+            
+            <!-- Product Info -->
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-2">Linen Shirt</h4>
+              <p class="text-muted mb-3">A comfortable and trendy Linen shirt perfect for everyday wear.</p>
+              <p class="h5 text-success fw-bold mb-3">$14.99</p>
+  
+              <!-- Size -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Size:</label>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-secondary btn-sm">S</button>
+                  <button class="btn btn-outline-secondary btn-sm">M</button>
+                  <button class="btn btn-outline-secondary btn-sm">L</button>
+                  <button class="btn btn-outline-secondary btn-sm">XL</button>
+                </div>
+              </div>
+  
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantity:</label>
+                <input type="number" value="1" min="1" class="form-control form-control-sm" style="max-width: 80px;">
+              </div>
+  
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                  <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fas fa-heart me-1"></i> Wishlist
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+        
+  <!-- Call to Action Section -->
+<section class="cta-section py-5" style="background-image: url('img/cta.jpg'); background-size: cover; background-position: center; color: #fff; text-align: center;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
+      <div class="row">
+        <div class="col">
+          <h2 style="font-size: 2.5rem; font-weight: 600;">Don't Miss Out on Our Latest Collections</h2>
+          <p style="font-size: 1.25rem; margin-top: 15px;">Shop now and enjoy exclusive discounts on our best products</p>
+          <a href="shop.html" class="btn btn-primary btn-lg mt-4" style="border-radius: 50px; padding: 10px 30px; background-color: #d4a373; border-color: #d4a373; font-weight: 600; font-size: 1rem; text-decoration: none;">
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="promo-masonry py-5" style="background-color: #faedcd;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" >
+      <div class="row g-3">
+        <!-- Column 1 (two stacked banners) -->
+        <div class="col-md-6">
+          <!-- Small Banner on Top -->
+          <div class="mb-3">
+            <div class="banner rounded-3 overflow-hidden" style="height: 200px;">
+              <img src="img/banner-1.webp" alt="Banner Small" class="w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+          <!-- Tall Banner Below -->
+          <div>
+            <div class="banner rounded-3 overflow-hidden" style="height: 300px;">
+              <img src="img/banner-2.jfif" alt="Banner Tall" class="w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Column 2 (single large banner) -->
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="banner rounded-3 overflow-hidden w-100" style="height: 520px;">
+            <img src="img/banner-3.webp" alt="Banner Large" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter Section -->
+<section class="newsletter py-5" style="background-color: #141414;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container text-center text-white" >
+      <h3 class="fw-bold">Sign up for exclusive updates</h3>
+      <p>Get the latest news, trends, and special offers directly in your inbox.</p>
+      <div class="d-flex justify-content-center">
+        <input type="email" class="form-control w-50" placeholder="Enter your email" />
+        <button class="btn btn-warning ms-2">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Add some space after newsletter section -->
+  <div class="newsletter-space" style="height: 50px; background-color: #fff;"></div>
+  
+  <!-- Footer Section -->
+  <footer class="footer text-white pt-5 pb-3" style="background-color: #141414;" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & Description -->
+        <div class="col-md-4 mb-4">
+          <h4 class="fw-bold" style="color: #d4a373;">StyleSavvy</h4>
+          <p style="color: #aaa;">Your ultimate destination for curated fashion and modern elegance.</p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="shop.html" class="footer-link">Shop</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+  
+        <!-- Customer Service -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">Customer Care</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">Follow Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white fs-5 social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Payment Methods -->
+      <div class="row text-center mt-4">
+        <div class="col">
+          <h6 class="text-uppercase fw-bold mb-3" style="color: #fefae0;">We Accept</h6>
+          <div class="d-flex justify-content-center gap-4">
+            <img src="img/visa.png" alt="Visa" class="payment-icon" width="50">
+            <img src="img/masterCard.png" alt="MasterCard" class="payment-icon" width="50">
+            <img src="img/paypal.png" alt="PayPal" class="payment-icon" width="50">
+                     </div>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p class="mb-0" style="color: #777;">&copy; 2025 StyleSavvy. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+    <!-- Bootstrap JS (for functionality like collapse) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS (linked to your own script.js) -->
+    <script src="js/script.js"></script>
+    <!-- AOS Library JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // Set duration for the animation
+    easing: 'ease-in-out', // Set easing function for smooth transitions
+    once: true // Make sure animations happen only once
+  });
+</script>
+
+</body>
+
+</html>

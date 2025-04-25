@@ -258,4 +258,119 @@ html {
     }
   }
   
+ /* Filter button styling */
+.filter-box h6 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
   
+  /* Optional: Product card hover */
+  .product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* For circular color dots */
+  .color-dot {
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  .animated-gradient {
+    background: linear-gradient(90deg, #d4a373, #e76f51, #f4a261);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s infinite ease-in-out;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .blog-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  /* Larger featured blog */
+  .blog-post-card.large {
+    grid-column: span 2;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  /* Regular-sized blog cards */
+  .blog-post-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .blog-post-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .blog-post-card h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  .blog-post-card p {
+    line-height: 1.7;
+    font-size: 1rem;
+    color: #666;
+  }
+  .blog-post-card .read-more {
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .blog-post-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  /* Smaller blog post styling */
+  .blog-post-card.small {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .blog-post-card:hover {
+    transform: scale(1.05);
+  }
+  .blog-post {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  .blog-post img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .blog-post h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  .blog-post p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+  }
+  .blog-post small {
+    color: #888;
+    font-size: 1rem;
+  }
